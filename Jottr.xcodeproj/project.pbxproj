@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05EA5025AAB8D72B106ED84F /* Pods_JottrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AD14A7F250A8D255A282FD /* Pods_JottrTests.framework */; };
+		79761FDCAE068F2CC41D08AC /* Pods_JottrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F432B269E94EF1FACA9ADEE2 /* Pods_JottrUITests.framework */; };
+		87D528130861943916018C9A /* Pods_Jottr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E11175293DC1CD14CA1891 /* Pods_Jottr.framework */; };
+		D40CFF9B21AA0AB4003F0645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFF9A21AA0AB4003F0645 /* AppDelegate.swift */; };
+		D40CFF9D21AA0AB4003F0645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFF9C21AA0AB4003F0645 /* ViewController.swift */; };
+		D40CFFA021AA0AB5003F0645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40CFF9E21AA0AB5003F0645 /* Main.storyboard */; };
+		D40CFFA221AA0AB6003F0645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40CFFA121AA0AB6003F0645 /* Assets.xcassets */; };
+		D40CFFA521AA0AB6003F0645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40CFFA321AA0AB6003F0645 /* LaunchScreen.storyboard */; };
+		D40CFFB021AA0AB6003F0645 /* JottrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFAF21AA0AB6003F0645 /* JottrTests.swift */; };
+		D40CFFBB21AA0AB6003F0645 /* JottrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFBA21AA0AB6003F0645 /* JottrUITests.swift */; };
+		D40CFFC921AA0C50003F0645 /* NewJot_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFC821AA0C50003F0645 /* NewJot_VC.swift */; };
+		D40CFFCB21AA0C8A003F0645 /* Feed_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFCA21AA0C8A003F0645 /* Feed_VC.swift */; };
+		D40CFFCD21AA0CBC003F0645 /* Login_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFCC21AA0CBC003F0645 /* Login_VC.swift */; };
+		D40CFFCF21AA0CD0003F0645 /* Verification_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFCE21AA0CD0003F0645 /* Verification_VC.swift */; };
+		D47E1C9C21B2E46000A28B6D /* Hamburger_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47E1C9B21B2E46000A28B6D /* Hamburger_VC.swift */; };
+		D47E1C9E21B2E67200A28B6D /* MainContainer_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47E1C9D21B2E67200A28B6D /* MainContainer_VC.swift */; };
+		D47E1CA021B2EF0300A28B6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */; };
+		D47E1CA121B2EF0300A28B6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */; };
+		D47E1CA221B2EF0300A28B6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */; };
+		D495525621B30081000636D0 /* Jott.swift in Sources */ = {isa = PBXBuildFile; fileRef = D495525521B30081000636D0 /* Jott.swift */; };
+		D495526421B32B93000636D0 /* Hamburger_icon.svg (1).png in Resources */ = {isa = PBXBuildFile; fileRef = D495526321B32B92000636D0 /* Hamburger_icon.svg (1).png */; };
+		D495526621B33130000636D0 /* NewThread_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D495526521B3312C000636D0 /* NewThread_VC.swift */; };
+		D495526821B337A2000636D0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D495526721B337A2000636D0 /* File.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D40CFFAC21AA0AB6003F0645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D40CFF8F21AA0AB4003F0645 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D40CFF9621AA0AB4003F0645;
+			remoteInfo = Jottr;
+		};
+		D40CFFB721AA0AB6003F0645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D40CFF8F21AA0AB4003F0645 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D40CFF9621AA0AB4003F0645;
+			remoteInfo = Jottr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F2C8E71BA9BE5EB061807A0 /* Pods-JottrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JottrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JottrUITests/Pods-JottrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3556483DA7233B59D3B1600C /* Pods-JottrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JottrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JottrTests/Pods-JottrTests.release.xcconfig"; sourceTree = "<group>"; };
+		75E11175293DC1CD14CA1891 /* Pods_Jottr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jottr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AD14A7F250A8D255A282FD /* Pods_JottrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JottrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A78BE0BC669CAF00322B04B /* Pods-Jottr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jottr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jottr/Pods-Jottr.release.xcconfig"; sourceTree = "<group>"; };
+		CD34E94EE74B54BF8A05B97A /* Pods-JottrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JottrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JottrUITests/Pods-JottrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CDED3E25E336B3F4380BCAF5 /* Pods-Jottr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jottr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jottr/Pods-Jottr.debug.xcconfig"; sourceTree = "<group>"; };
+		D40CFF9721AA0AB4003F0645 /* Jottr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jottr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40CFF9A21AA0AB4003F0645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D40CFF9C21AA0AB4003F0645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D40CFF9F21AA0AB5003F0645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D40CFFA121AA0AB6003F0645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D40CFFA421AA0AB6003F0645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D40CFFA621AA0AB6003F0645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D40CFFAB21AA0AB6003F0645 /* JottrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JottrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40CFFAF21AA0AB6003F0645 /* JottrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JottrTests.swift; sourceTree = "<group>"; };
+		D40CFFB121AA0AB6003F0645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D40CFFB621AA0AB6003F0645 /* JottrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JottrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40CFFBA21AA0AB6003F0645 /* JottrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JottrUITests.swift; sourceTree = "<group>"; };
+		D40CFFBC21AA0AB6003F0645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D40CFFC821AA0C50003F0645 /* NewJot_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJot_VC.swift; sourceTree = "<group>"; };
+		D40CFFCA21AA0C8A003F0645 /* Feed_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed_VC.swift; sourceTree = "<group>"; };
+		D40CFFCC21AA0CBC003F0645 /* Login_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_VC.swift; sourceTree = "<group>"; };
+		D40CFFCE21AA0CD0003F0645 /* Verification_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification_VC.swift; sourceTree = "<group>"; };
+		D47E1C9B21B2E46000A28B6D /* Hamburger_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hamburger_VC.swift; sourceTree = "<group>"; };
+		D47E1C9D21B2E67200A28B6D /* MainContainer_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer_VC.swift; sourceTree = "<group>"; };
+		D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D495525421B2F5B8000636D0 /* Jottr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jottr.entitlements; sourceTree = "<group>"; };
+		D495525521B30081000636D0 /* Jott.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jott.swift; sourceTree = "<group>"; };
+		D495526321B32B92000636D0 /* Hamburger_icon.svg (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hamburger_icon.svg (1).png"; path = "Jottr/Hamburger_icon.svg (1).png"; sourceTree = "<group>"; };
+		D495526521B3312C000636D0 /* NewThread_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThread_VC.swift; sourceTree = "<group>"; };
+		D495526721B337A2000636D0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		EC3CD6FD2A12348B5935F24F /* Pods-JottrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JottrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JottrTests/Pods-JottrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F432B269E94EF1FACA9ADEE2 /* Pods_JottrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JottrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D40CFF9421AA0AB4003F0645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D528130861943916018C9A /* Pods_Jottr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40CFFA821AA0AB6003F0645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EA5025AAB8D72B106ED84F /* Pods_JottrTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40CFFB321AA0AB6003F0645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79761FDCAE068F2CC41D08AC /* Pods_JottrUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9417F7FECE81659C24BCD608 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDED3E25E336B3F4380BCAF5 /* Pods-Jottr.debug.xcconfig */,
+				9A78BE0BC669CAF00322B04B /* Pods-Jottr.release.xcconfig */,
+				EC3CD6FD2A12348B5935F24F /* Pods-JottrTests.debug.xcconfig */,
+				3556483DA7233B59D3B1600C /* Pods-JottrTests.release.xcconfig */,
+				2F2C8E71BA9BE5EB061807A0 /* Pods-JottrUITests.debug.xcconfig */,
+				CD34E94EE74B54BF8A05B97A /* Pods-JottrUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5C7A643A722FB8EF85B0330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75E11175293DC1CD14CA1891 /* Pods_Jottr.framework */,
+				79AD14A7F250A8D255A282FD /* Pods_JottrTests.framework */,
+				F432B269E94EF1FACA9ADEE2 /* Pods_JottrUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D40CFF8E21AA0AB4003F0645 = {
+			isa = PBXGroup;
+			children = (
+				D495526721B337A2000636D0 /* File.swift */,
+				D495526521B3312C000636D0 /* NewThread_VC.swift */,
+				D495525521B30081000636D0 /* Jott.swift */,
+				D495526321B32B92000636D0 /* Hamburger_icon.svg (1).png */,
+				D40CFF9921AA0AB4003F0645 /* Jottr */,
+				D40CFFAE21AA0AB6003F0645 /* JottrTests */,
+				D40CFFB921AA0AB6003F0645 /* JottrUITests */,
+				D40CFF9821AA0AB4003F0645 /* Products */,
+				9417F7FECE81659C24BCD608 /* Pods */,
+				B5C7A643A722FB8EF85B0330 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D40CFF9821AA0AB4003F0645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D40CFF9721AA0AB4003F0645 /* Jottr.app */,
+				D40CFFAB21AA0AB6003F0645 /* JottrTests.xctest */,
+				D40CFFB621AA0AB6003F0645 /* JottrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D40CFF9921AA0AB4003F0645 /* Jottr */ = {
+			isa = PBXGroup;
+			children = (
+				D495525421B2F5B8000636D0 /* Jottr.entitlements */,
+				D40CFF9A21AA0AB4003F0645 /* AppDelegate.swift */,
+				D40CFF9C21AA0AB4003F0645 /* ViewController.swift */,
+				D40CFF9E21AA0AB5003F0645 /* Main.storyboard */,
+				D40CFFC821AA0C50003F0645 /* NewJot_VC.swift */,
+				D40CFFCA21AA0C8A003F0645 /* Feed_VC.swift */,
+				D40CFFCC21AA0CBC003F0645 /* Login_VC.swift */,
+				D40CFFCE21AA0CD0003F0645 /* Verification_VC.swift */,
+				D47E1C9D21B2E67200A28B6D /* MainContainer_VC.swift */,
+				D47E1C9B21B2E46000A28B6D /* Hamburger_VC.swift */,
+				D40CFFA121AA0AB6003F0645 /* Assets.xcassets */,
+				D40CFFA321AA0AB6003F0645 /* LaunchScreen.storyboard */,
+				D40CFFA621AA0AB6003F0645 /* Info.plist */,
+				D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */,
+			);
+			path = Jottr;
+			sourceTree = "<group>";
+		};
+		D40CFFAE21AA0AB6003F0645 /* JottrTests */ = {
+			isa = PBXGroup;
+			children = (
+				D40CFFAF21AA0AB6003F0645 /* JottrTests.swift */,
+				D40CFFB121AA0AB6003F0645 /* Info.plist */,
+			);
+			path = JottrTests;
+			sourceTree = "<group>";
+		};
+		D40CFFB921AA0AB6003F0645 /* JottrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D40CFFBA21AA0AB6003F0645 /* JottrUITests.swift */,
+				D40CFFBC21AA0AB6003F0645 /* Info.plist */,
+			);
+			path = JottrUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D40CFF9621AA0AB4003F0645 /* Jottr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40CFFBF21AA0AB6003F0645 /* Build configuration list for PBXNativeTarget "Jottr" */;
+			buildPhases = (
+				F33A0A2AEA5E55AAF6D13C6E /* [CP] Check Pods Manifest.lock */,
+				D40CFF9321AA0AB4003F0645 /* Sources */,
+				D40CFF9421AA0AB4003F0645 /* Frameworks */,
+				D40CFF9521AA0AB4003F0645 /* Resources */,
+				E85615C3E4CDF930EE6F712E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jottr;
+			productName = Jottr;
+			productReference = D40CFF9721AA0AB4003F0645 /* Jottr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D40CFFAA21AA0AB6003F0645 /* JottrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40CFFC221AA0AB6003F0645 /* Build configuration list for PBXNativeTarget "JottrTests" */;
+			buildPhases = (
+				D204B06B37F3447728BA5AC6 /* [CP] Check Pods Manifest.lock */,
+				D40CFFA721AA0AB6003F0645 /* Sources */,
+				D40CFFA821AA0AB6003F0645 /* Frameworks */,
+				D40CFFA921AA0AB6003F0645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D40CFFAD21AA0AB6003F0645 /* PBXTargetDependency */,
+			);
+			name = JottrTests;
+			productName = JottrTests;
+			productReference = D40CFFAB21AA0AB6003F0645 /* JottrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D40CFFB521AA0AB6003F0645 /* JottrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40CFFC521AA0AB6003F0645 /* Build configuration list for PBXNativeTarget "JottrUITests" */;
+			buildPhases = (
+				879134E81FC8BE6097B44770 /* [CP] Check Pods Manifest.lock */,
+				D40CFFB221AA0AB6003F0645 /* Sources */,
+				D40CFFB321AA0AB6003F0645 /* Frameworks */,
+				D40CFFB421AA0AB6003F0645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D40CFFB821AA0AB6003F0645 /* PBXTargetDependency */,
+			);
+			name = JottrUITests;
+			productName = JottrUITests;
+			productReference = D40CFFB621AA0AB6003F0645 /* JottrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D40CFF8F21AA0AB4003F0645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "John Garrett";
+				TargetAttributes = {
+					D40CFF9621AA0AB4003F0645 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					D40CFFAA21AA0AB6003F0645 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D40CFF9621AA0AB4003F0645;
+					};
+					D40CFFB521AA0AB6003F0645 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D40CFF9621AA0AB4003F0645;
+					};
+				};
+			};
+			buildConfigurationList = D40CFF9221AA0AB4003F0645 /* Build configuration list for PBXProject "Jottr" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D40CFF8E21AA0AB4003F0645;
+			productRefGroup = D40CFF9821AA0AB4003F0645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D40CFF9621AA0AB4003F0645 /* Jottr */,
+				D40CFFAA21AA0AB6003F0645 /* JottrTests */,
+				D40CFFB521AA0AB6003F0645 /* JottrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D40CFF9521AA0AB4003F0645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40CFFA521AA0AB6003F0645 /* LaunchScreen.storyboard in Resources */,
+				D47E1CA021B2EF0300A28B6D /* GoogleService-Info.plist in Resources */,
+				D40CFFA221AA0AB6003F0645 /* Assets.xcassets in Resources */,
+				D40CFFA021AA0AB5003F0645 /* Main.storyboard in Resources */,
+				D495526421B32B93000636D0 /* Hamburger_icon.svg (1).png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40CFFA921AA0AB6003F0645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D47E1CA121B2EF0300A28B6D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40CFFB421AA0AB6003F0645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D47E1CA221B2EF0300A28B6D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		879134E81FC8BE6097B44770 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JottrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D204B06B37F3447728BA5AC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JottrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E85615C3E4CDF930EE6F712E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Jottr/Pods-Jottr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jottr/Pods-Jottr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F33A0A2AEA5E55AAF6D13C6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jottr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D40CFF9321AA0AB4003F0645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40CFFCB21AA0C8A003F0645 /* Feed_VC.swift in Sources */,
+				D47E1C9E21B2E67200A28B6D /* MainContainer_VC.swift in Sources */,
+				D40CFFCF21AA0CD0003F0645 /* Verification_VC.swift in Sources */,
+				D495526621B33130000636D0 /* NewThread_VC.swift in Sources */,
+				D40CFF9D21AA0AB4003F0645 /* ViewController.swift in Sources */,
+				D40CFFC921AA0C50003F0645 /* NewJot_VC.swift in Sources */,
+				D495525621B30081000636D0 /* Jott.swift in Sources */,
+				D47E1C9C21B2E46000A28B6D /* Hamburger_VC.swift in Sources */,
+				D40CFF9B21AA0AB4003F0645 /* AppDelegate.swift in Sources */,
+				D495526821B337A2000636D0 /* File.swift in Sources */,
+				D40CFFCD21AA0CBC003F0645 /* Login_VC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40CFFA721AA0AB6003F0645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40CFFB021AA0AB6003F0645 /* JottrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40CFFB221AA0AB6003F0645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40CFFBB21AA0AB6003F0645 /* JottrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D40CFFAD21AA0AB6003F0645 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D40CFF9621AA0AB4003F0645 /* Jottr */;
+			targetProxy = D40CFFAC21AA0AB6003F0645 /* PBXContainerItemProxy */;
+		};
+		D40CFFB821AA0AB6003F0645 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D40CFF9621AA0AB4003F0645 /* Jottr */;
+			targetProxy = D40CFFB721AA0AB6003F0645 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D40CFF9E21AA0AB5003F0645 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D40CFF9F21AA0AB5003F0645 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D40CFFA321AA0AB6003F0645 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D40CFFA421AA0AB6003F0645 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D40CFFBD21AA0AB6003F0645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D40CFFBE21AA0AB6003F0645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D40CFFC021AA0AB6003F0645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDED3E25E336B3F4380BCAF5 /* Pods-Jottr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Jottr/Jottr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F65W3J85C2;
+				INFOPLIST_FILE = Jottr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnPersonal.Jottr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D40CFFC121AA0AB6003F0645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A78BE0BC669CAF00322B04B /* Pods-Jottr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Jottr/Jottr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F65W3J85C2;
+				INFOPLIST_FILE = Jottr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnPersonal.Jottr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D40CFFC321AA0AB6003F0645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3CD6FD2A12348B5935F24F /* Pods-JottrTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F65W3J85C2;
+				INFOPLIST_FILE = JottrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = johnPersonal.JottrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jottr.app/Jottr";
+			};
+			name = Debug;
+		};
+		D40CFFC421AA0AB6003F0645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3556483DA7233B59D3B1600C /* Pods-JottrTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F65W3J85C2;
+				INFOPLIST_FILE = JottrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = johnPersonal.JottrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jottr.app/Jottr";
+			};
+			name = Release;
+		};
+		D40CFFC621AA0AB6003F0645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F2C8E71BA9BE5EB061807A0 /* Pods-JottrUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F65W3J85C2;
+				INFOPLIST_FILE = JottrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = johnPersonal.JottrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jottr;
+			};
+			name = Debug;
+		};
+		D40CFFC721AA0AB6003F0645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD34E94EE74B54BF8A05B97A /* Pods-JottrUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F65W3J85C2;
+				INFOPLIST_FILE = JottrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = johnPersonal.JottrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jottr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D40CFF9221AA0AB4003F0645 /* Build configuration list for PBXProject "Jottr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40CFFBD21AA0AB6003F0645 /* Debug */,
+				D40CFFBE21AA0AB6003F0645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40CFFBF21AA0AB6003F0645 /* Build configuration list for PBXNativeTarget "Jottr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40CFFC021AA0AB6003F0645 /* Debug */,
+				D40CFFC121AA0AB6003F0645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40CFFC221AA0AB6003F0645 /* Build configuration list for PBXNativeTarget "JottrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40CFFC321AA0AB6003F0645 /* Debug */,
+				D40CFFC421AA0AB6003F0645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40CFFC521AA0AB6003F0645 /* Build configuration list for PBXNativeTarget "JottrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40CFFC621AA0AB6003F0645 /* Debug */,
+				D40CFFC721AA0AB6003F0645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D40CFF8F21AA0AB4003F0645 /* Project object */;
+}
