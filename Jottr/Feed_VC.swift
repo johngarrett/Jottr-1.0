@@ -16,7 +16,8 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 	
 	@IBOutlet weak var feedName: UINavigationItem!
 	@IBOutlet weak var collectionView: UICollectionView!
-
+	@IBOutlet var lblEmpty: UILabel!
+	
 	lazy var userRef = Database.database().reference().child("Users").child("UID").child("Threads")//.child(currentThread!)
 
 	override func viewDidLoad() {
@@ -45,7 +46,8 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 						let jott = Jott()
 						jott.name = dict["name"] as? String
 						jott.text = dict["text"] as? String
-						jott.time = dict["time"] as? String
+						jott.time = dict["time"] as? Int
+						
 						self.jotts.insert(jott, at: 0)
 					}
 				}
@@ -61,7 +63,7 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 						let jott = Jott()
 						jott.name = dict["name"] as? String
 						jott.text = dict["text"] as? String
-						jott.time = dict["time"] as? String
+						jott.time = dict["time"] as? Int
 						self.jotts.insert(jott, at: 0)
 						
 						let firstItemIndex = IndexPath(item: 0, section: 0)
@@ -83,7 +85,11 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 	}
 	
 	/********************COLLECTION VIEW METHODS*******************************/
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {return jotts.count}
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+	{
+		lblEmpty.isHidden = (jotts.count < 1) ?  false : true
+		return jotts.count
+	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "jottCell", for: indexPath) as! JottCell
@@ -93,8 +99,9 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 		let jott = jotts[indexPath.item]
 		cell.lblName.text = jott.name
 		cell.txtText.text = jott.text
+		
 		if let time = jott.time{
-			let date = Date(timeIntervalSince1970: Double(time)!)
+			let date = Date(timeIntervalSince1970: TimeInterval(time))
 			let dayTimePeriodFormatter = DateFormatter()
 			dayTimePeriodFormatter.dateFormat = "MMM d, h:mm a"
 			let dateString = dayTimePeriodFormatter.string(from: date)
@@ -110,16 +117,19 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 		cell.formatCell()
 		return cell
 	}
+	
+	
 	@objc func deleteJott(sender:UIButton) {
 		let i : Int = (sender.layer.value(forKey: "index")) as! Int
 		
-		userRef.child(currentThread!).child(jotts[i].name).removeValue()
-		
+		let refToDelete = Database.database().reference().child("Users").child("UID").child("Threads").child(jotts[i].name)
+		refToDelete.removeValue()
+		print(userRef.child(jotts[i].name).description())
 		jotts.remove(at: i)
 		let removalIndex = IndexPath(item: i, section: 0)
 		collectionView.deleteItems(at: [removalIndex])
-		
 	}
+	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		var height:CGFloat = 100
 		if let text = jotts[indexPath.item].text{
@@ -164,6 +174,6 @@ extension CGRect{
 		let size = CGSize(width: 338, height: 1000)
 		let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
 		
-		return NSString(string: txt).boundingRect(with: size, options: options, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: CGFloat(fontSize), weight: .heavy)], context: nil)
+		return NSString(string: txt).boundingRect(with: size, options: options, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: CGFloat(fontSize), weight: .medium)], context: nil)
 	}
 }

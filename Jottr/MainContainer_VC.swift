@@ -19,15 +19,12 @@ class MainContainer_VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		NotificationCenter.default.addObserver(self, selector: #selector(toggleHamburgerMenu), name: NSNotification.Name("ToggleHamburgerMenu"), object: nil)
-		
-//		let tap = UITapGestureRecognizer(target: feedContainerView, action: #selector(self.handleTap(_:)))
-//		feedContainerView.addGestureRecognizer(tap)
     }
-//	//if user clicked on main view
-//	@objc func handleTap(_ sender: UITapGestureRecognizer) {
-//		toggleHamburgerMenu()
+
+//	override var prefersStatusBarHidden: Bool {
+//		return !hamburgerMenuVisible
 //	}
-//
+// TODO 
 	@objc func toggleHamburgerMenu(){ //@objc requred for notification center to access
 		if (hamburgerMenuVisible){
 				hamburgerMenuConstraint.constant = -210
@@ -37,7 +34,7 @@ class MainContainer_VC: UIViewController {
 			hamburgerMenuConstraint.constant = 0
 			hamburgerMenuVisible = true
 		}
-		UIView.animate(withDuration: 0.3) {
+		UIView.animate(withDuration: 0.2) {
 			self.view.layoutIfNeeded()
 			self.hamburgerContainerView.layer.shadowOffset = CGSize(width: 50, height: 0)
 			self.hamburgerContainerView.layer.shadowOpacity = 1

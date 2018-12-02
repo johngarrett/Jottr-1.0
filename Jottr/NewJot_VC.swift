@@ -22,7 +22,7 @@ class NewJot_VC: UIViewController {
 		btnSave.isEnabled = false
 		//the drop down is gonna let you chose which thread to post it in
 		super.viewDidLoad()
-		lblTitle.title = "Jott to: \(currentThread!)"
+		lblTitle.title = "Jott to \(currentThread!)"
     }
 	
 	@IBAction func cancel(_ sender: Any) {self.dismiss(animated: true, completion: nil)}
@@ -36,13 +36,13 @@ class NewJot_VC: UIViewController {
 		}
 		else{
 			let ref = Database.database().reference().child("Users").child("UID").child("Threads")
-													 .child(currentThread!).child("Jotts").child(txtName.text!)
+				.child(currentThread!).child("Jotts").child(txtName.text!.trimmingCharacters(in: .whitespaces))
 			
-			let time = NSDate().timeIntervalSince1970
+			let time = UInt64(NSDate().timeIntervalSince1970 * 1000)
 			
 			
-			let dict = ["name": txtName.text ?? "null",
-						"text":  txtText.text ?? "",
+			let dict = ["name": txtName.text?.trimmingCharacters(in: .whitespaces) ?? "null",
+						"text":  txtText.text?.trimmingCharacters(in: .whitespaces) ?? "",
 						"time": time] as [String : Any]
 			ref.updateChildValues(dict)
 			self.dismiss(animated: true, completion: nil)

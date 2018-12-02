@@ -8,7 +8,7 @@
 
 import Foundation
 class Jott{
+	var time:Int!
 	var name:String!
-	var time:String!
 	var text:String!
 }

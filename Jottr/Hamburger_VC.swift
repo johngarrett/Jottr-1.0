@@ -20,6 +20,9 @@ class Hamburger_VC: UIViewController, UITableViewDelegate, UITableViewDataSource
 		return threadNames.count;
 	}
 	
+	@IBAction func swipeAway(_ sender: Any) {
+		NotificationCenter.default.post(name: NSNotification.Name("ToggleHamburgerMenu"), object: nil)
+	}
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "ThreadCell", for: indexPath) as! ThreadCell
 		cell.lblThreadName.text = threadNames[indexPath.item]
