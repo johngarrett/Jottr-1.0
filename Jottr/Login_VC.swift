@@ -16,14 +16,6 @@ class Login_VC: UIViewController {
 	@IBOutlet weak var phone_input: UITextField!
 	@IBOutlet weak var country_input: UITextField!
 	
-	override func viewDidLoad() {
-		if (Auth.auth().currentUser != nil){
-			print("There is a user already named \(Auth.auth().currentUser!.uid)")
-			UserDefaults.standard.set(Auth.auth().currentUser!.uid, forKey: "UID")
-			self.performSegue(withIdentifier: "loginToMainView", sender: nil)
-		}
-	}
-	
 	func verifyNum(_ number :String!){
 		let num = number.digits
 		let phone_number = "+\(country_code)\(String(describing: num))"
