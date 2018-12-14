@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import FirebaseAuth
 import FirebaseDatabase
 class NewJot_VC: UIViewController {
 
 	var currentThread:String?
+	let UID:String = UserDefaults.standard.string(forKey: "UID") ?? (Auth.auth().currentUser?.uid)! //pull from storage
 	
 	@IBOutlet var btnSave: UIBarButtonItem!
 	@IBOutlet var lblTitle: UINavigationItem!
@@ -35,7 +37,7 @@ class NewJot_VC: UIViewController {
 			return
 		}
 		else{
-			let ref = Database.database().reference().child("Users").child("UID").child("Threads")
+			let ref = Database.database().reference().child("Users").child(UID).child("Threads")
 				.child(currentThread!).child("Jotts").child(txtName.text!.trimmingCharacters(in: .whitespaces))
 			
 			let time = UInt64(NSDate().timeIntervalSince1970 * 1000)

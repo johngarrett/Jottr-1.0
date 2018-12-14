@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import FirebaseDatabase
 
 class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
@@ -18,7 +19,8 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 	@IBOutlet weak var collectionView: UICollectionView!
 	@IBOutlet var lblEmpty: UILabel!
 	
-	lazy var userRef = Database.database().reference().child("Users").child("UID").child("Threads")//.child(currentThread!)
+	let UID:String = UserDefaults.standard.string(forKey: "UID") ?? (Auth.auth().currentUser?.uid)! //pull from storage
+	lazy var userRef = Database.database().reference().child("Users").child(UID).child("Threads")//.child(currentThread!)
 
 	override func viewDidLoad() {
 		NotificationCenter.default.addObserver(self, selector: #selector(onNotification(notification:)), name: Notification.Name("currentThread"), object: nil)
@@ -30,7 +32,7 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 		self.jotts.removeAll()//clear the jotts to load the new ones
 		currentThread = notification.userInfo!["key"] as? String
 		feedName.title = currentThread
-		userRef = Database.database().reference().child("Users").child("UID").child("Threads").child(currentThread!)
+		userRef = Database.database().reference().child("Users").child(UID).child("Threads").child(currentThread!)
 		downloadJotts {
 			self.collectionView.reloadData()
 		}
@@ -122,7 +124,7 @@ class Feed_VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 	@objc func deleteJott(sender:UIButton) {
 		let i : Int = (sender.layer.value(forKey: "index")) as! Int
 		
-		let refToDelete = Database.database().reference().child("Users").child("UID").child("Threads").child(jotts[i].name)
+		let refToDelete = Database.database().reference().child("Users").child(UID).child("Threads").child(jotts[i].name)
 		refToDelete.removeValue()
 		print(userRef.child(jotts[i].name).description())
 		jotts.remove(at: i)

@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import FirebaseAuth
 import FirebaseDatabase
 class NewThread_VC: UIViewController {
-	let ref = Database.database().reference().child("Users").child("UID").child("Threads")
+	let UID:String = UserDefaults.standard.string(forKey: "UID") ?? (Auth.auth().currentUser?.uid)! //pull from storage
+	lazy var ref = Database.database().reference().child("Users").child(UID).child("Threads")
 
 	
 	@IBOutlet var btnDone: UIBarButtonItem!

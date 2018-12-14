@@ -11,7 +11,6 @@
 		79761FDCAE068F2CC41D08AC /* Pods_JottrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F432B269E94EF1FACA9ADEE2 /* Pods_JottrUITests.framework */; };
 		87D528130861943916018C9A /* Pods_Jottr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E11175293DC1CD14CA1891 /* Pods_Jottr.framework */; };
 		D40CFF9B21AA0AB4003F0645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFF9A21AA0AB4003F0645 /* AppDelegate.swift */; };
-		D40CFF9D21AA0AB4003F0645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFF9C21AA0AB4003F0645 /* ViewController.swift */; };
 		D40CFFA021AA0AB5003F0645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40CFF9E21AA0AB5003F0645 /* Main.storyboard */; };
 		D40CFFA221AA0AB6003F0645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40CFFA121AA0AB6003F0645 /* Assets.xcassets */; };
 		D40CFFA521AA0AB6003F0645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40CFFA321AA0AB6003F0645 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		D40CFFCB21AA0C8A003F0645 /* Feed_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFCA21AA0C8A003F0645 /* Feed_VC.swift */; };
 		D40CFFCD21AA0CBC003F0645 /* Login_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFCC21AA0CBC003F0645 /* Login_VC.swift */; };
 		D40CFFCF21AA0CD0003F0645 /* Verification_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CFFCE21AA0CD0003F0645 /* Verification_VC.swift */; };
+		D4133A4521C42E2900610503 /* Launch_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4133A4421C42E2900610503 /* Launch_VC.swift */; };
 		D45C3A0321B3506700232F22 /* 195031-200.png in Resources */ = {isa = PBXBuildFile; fileRef = D45C3A0221B3506700232F22 /* 195031-200.png */; };
 		D47E1C9C21B2E46000A28B6D /* Hamburger_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47E1C9B21B2E46000A28B6D /* Hamburger_VC.swift */; };
 		D47E1C9E21B2E67200A28B6D /* MainContainer_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47E1C9D21B2E67200A28B6D /* MainContainer_VC.swift */; };
@@ -28,9 +28,9 @@
 		D47E1CA121B2EF0300A28B6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */; };
 		D47E1CA221B2EF0300A28B6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */; };
 		D495525621B30081000636D0 /* Jott.swift in Sources */ = {isa = PBXBuildFile; fileRef = D495525521B30081000636D0 /* Jott.swift */; };
-		D495526421B32B93000636D0 /* Hamburger_icon.svg (1).png in Resources */ = {isa = PBXBuildFile; fileRef = D495526321B32B92000636D0 /* Hamburger_icon.svg (1).png */; };
+		D495526421B32B93000636D0 /* Hamburger Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D495526321B32B92000636D0 /* Hamburger Icon.png */; };
 		D495526621B33130000636D0 /* NewThread_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D495526521B3312C000636D0 /* NewThread_VC.swift */; };
-		D495526821B337A2000636D0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D495526721B337A2000636D0 /* File.swift */; };
+		D495526821B337A2000636D0 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = D495526721B337A2000636D0 /* Thread.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 		CDED3E25E336B3F4380BCAF5 /* Pods-Jottr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jottr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jottr/Pods-Jottr.debug.xcconfig"; sourceTree = "<group>"; };
 		D40CFF9721AA0AB4003F0645 /* Jottr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jottr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40CFF9A21AA0AB4003F0645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D40CFF9C21AA0AB4003F0645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D40CFF9F21AA0AB5003F0645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D40CFFA121AA0AB6003F0645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40CFFA421AA0AB6003F0645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,15 +74,16 @@
 		D40CFFCA21AA0C8A003F0645 /* Feed_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed_VC.swift; sourceTree = "<group>"; };
 		D40CFFCC21AA0CBC003F0645 /* Login_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_VC.swift; sourceTree = "<group>"; };
 		D40CFFCE21AA0CD0003F0645 /* Verification_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification_VC.swift; sourceTree = "<group>"; };
+		D4133A4421C42E2900610503 /* Launch_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch_VC.swift; sourceTree = "<group>"; };
 		D45C3A0221B3506700232F22 /* 195031-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "195031-200.png"; path = "Jottr/195031-200.png"; sourceTree = "<group>"; };
 		D47E1C9B21B2E46000A28B6D /* Hamburger_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hamburger_VC.swift; sourceTree = "<group>"; };
 		D47E1C9D21B2E67200A28B6D /* MainContainer_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer_VC.swift; sourceTree = "<group>"; };
 		D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D495525421B2F5B8000636D0 /* Jottr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jottr.entitlements; sourceTree = "<group>"; };
 		D495525521B30081000636D0 /* Jott.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jott.swift; sourceTree = "<group>"; };
-		D495526321B32B92000636D0 /* Hamburger_icon.svg (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hamburger_icon.svg (1).png"; path = "Jottr/Hamburger_icon.svg (1).png"; sourceTree = "<group>"; };
+		D495526321B32B92000636D0 /* Hamburger Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hamburger Icon.png"; path = "Jottr/Hamburger Icon.png"; sourceTree = "<group>"; };
 		D495526521B3312C000636D0 /* NewThread_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThread_VC.swift; sourceTree = "<group>"; };
-		D495526721B337A2000636D0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		D495526721B337A2000636D0 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		EC3CD6FD2A12348B5935F24F /* Pods-JottrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JottrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JottrTests/Pods-JottrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F432B269E94EF1FACA9ADEE2 /* Pods_JottrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JottrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,11 +142,8 @@
 		D40CFF8E21AA0AB4003F0645 = {
 			isa = PBXGroup;
 			children = (
-				D495526721B337A2000636D0 /* File.swift */,
-				D495526521B3312C000636D0 /* NewThread_VC.swift */,
-				D495525521B30081000636D0 /* Jott.swift */,
 				D45C3A0221B3506700232F22 /* 195031-200.png */,
-				D495526321B32B92000636D0 /* Hamburger_icon.svg (1).png */,
+				D495526321B32B92000636D0 /* Hamburger Icon.png */,
 				D40CFF9921AA0AB4003F0645 /* Jottr */,
 				D40CFFAE21AA0AB6003F0645 /* JottrTests */,
 				D40CFFB921AA0AB6003F0645 /* JottrUITests */,
@@ -170,8 +167,10 @@
 			isa = PBXGroup;
 			children = (
 				D495525421B2F5B8000636D0 /* Jottr.entitlements */,
+				D495526721B337A2000636D0 /* Thread.swift */,
+				D495525521B30081000636D0 /* Jott.swift */,
+				D495526521B3312C000636D0 /* NewThread_VC.swift */,
 				D40CFF9A21AA0AB4003F0645 /* AppDelegate.swift */,
-				D40CFF9C21AA0AB4003F0645 /* ViewController.swift */,
 				D40CFF9E21AA0AB5003F0645 /* Main.storyboard */,
 				D40CFFC821AA0C50003F0645 /* NewJot_VC.swift */,
 				D40CFFCA21AA0C8A003F0645 /* Feed_VC.swift */,
@@ -180,9 +179,10 @@
 				D47E1C9D21B2E67200A28B6D /* MainContainer_VC.swift */,
 				D47E1C9B21B2E46000A28B6D /* Hamburger_VC.swift */,
 				D40CFFA121AA0AB6003F0645 /* Assets.xcassets */,
-				D40CFFA321AA0AB6003F0645 /* LaunchScreen.storyboard */,
 				D40CFFA621AA0AB6003F0645 /* Info.plist */,
 				D47E1C9F21B2EF0300A28B6D /* GoogleService-Info.plist */,
+				D40CFFA321AA0AB6003F0645 /* LaunchScreen.storyboard */,
+				D4133A4421C42E2900610503 /* Launch_VC.swift */,
 			);
 			path = Jottr;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 				D47E1CA021B2EF0300A28B6D /* GoogleService-Info.plist in Resources */,
 				D40CFFA221AA0AB6003F0645 /* Assets.xcassets in Resources */,
 				D40CFFA021AA0AB5003F0645 /* Main.storyboard in Resources */,
-				D495526421B32B93000636D0 /* Hamburger_icon.svg (1).png in Resources */,
+				D495526421B32B93000636D0 /* Hamburger Icon.png in Resources */,
 				D45C3A0321B3506700232F22 /* 195031-200.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,14 +433,14 @@
 			files = (
 				D40CFFCB21AA0C8A003F0645 /* Feed_VC.swift in Sources */,
 				D47E1C9E21B2E67200A28B6D /* MainContainer_VC.swift in Sources */,
+				D4133A4521C42E2900610503 /* Launch_VC.swift in Sources */,
 				D40CFFCF21AA0CD0003F0645 /* Verification_VC.swift in Sources */,
 				D495526621B33130000636D0 /* NewThread_VC.swift in Sources */,
-				D40CFF9D21AA0AB4003F0645 /* ViewController.swift in Sources */,
 				D40CFFC921AA0C50003F0645 /* NewJot_VC.swift in Sources */,
 				D495525621B30081000636D0 /* Jott.swift in Sources */,
 				D47E1C9C21B2E46000A28B6D /* Hamburger_VC.swift in Sources */,
 				D40CFF9B21AA0AB4003F0645 /* AppDelegate.swift in Sources */,
-				D495526821B337A2000636D0 /* File.swift in Sources */,
+				D495526821B337A2000636D0 /* Thread.swift in Sources */,
 				D40CFFCD21AA0CBC003F0645 /* Login_VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import FirebaseDatabase
 
 class Hamburger_VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -14,7 +15,8 @@ class Hamburger_VC: UIViewController, UITableViewDelegate, UITableViewDataSource
 	var currentThread:String?
 	var threadNames = [String]()
 	@IBOutlet var tableView: UITableView!
-	lazy var userRef = Database.database().reference().child("Users").child("UID").child("Threads")
+	let UID:String = UserDefaults.standard.string(forKey: "UID") ?? (Auth.auth().currentUser?.uid)! //pull from storage
+	lazy var userRef = Database.database().reference().child("Users").child(UID).child("Threads")
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return threadNames.count;
